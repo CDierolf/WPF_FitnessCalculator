@@ -1,0 +1,75 @@
+﻿<Window x:Class="WPF_FitnessCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_FitnessCalculator"
+        mc:Ignorable="d"
+         Title="Fitness Calculator" Height="385.421" Width="400">
+
+<StackPanel Margin="5">
+
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        
+        <Border BorderBrush="Black" BorderThickness="2">
+            <StackPanel Grid.Column="0" Margin="5,0,5,0">
+                <TextBlock Text="Age:" 
+                            FontWeight="Bold"/>
+                <TextBox x:Name="txtBoxAge"
+                            Text="{Binding Person.Age, Mode=TwoWay}"
+                            LostFocus="txtBoxAge_LostFocus"
+                            Padding="2" 
+                            Margin="0,10"/>
+                <TextBlock Text="Weight:" 
+                            FontWeight="Bold"/>
+                <TextBox x:Name="txtBoxWeight"
+                            Padding="2" 
+                            Margin="0,10"/>
+                <TextBlock Text="Time Exercised (minutes):" 
+                            FontWeight="Bold"/>
+                <TextBox x:Name="txtBoxTime"
+                            Padding="2" 
+                            Margin="0,10"/>
+                <TextBlock Text="Target Heart Rate (average):" 
+                            FontWeight="Bold"/>
+                <TextBox x:Name="txtBoxHeartRate"
+                            Padding="2" 
+                            Margin="0,10"/>
+                <TextBlock Text="Gender:" FontWeight="Bold"/>
+                <ComboBox Margin="0,10"
+                            x:Name="cboGender">
+                    <ComboBoxItem>Male</ComboBoxItem>
+                    <ComboBoxItem>Female</ComboBoxItem>
+                </ComboBox>
+                <Button x:Name="btnSubmit"
+                        Margin="0,10"
+                        Content="Calculate"/>
+            </StackPanel>
+        </Border>
+
+            <StackPanel Grid.Column="1" Margin="15,0,5,5">
+                <TextBlock Text="Maximum Heart Rate:" Margin="5,4,0,0"
+                    FontWeight="Bold"/>
+                <Label x:Name="lblMaximumHeartRate"
+                    Margin="5,3"/>
+                <TextBlock Text="Target Heart Rate:" Margin="5,5,0,0"
+                    FontWeight="Bold"/>
+                <Label x:Name="lblTargetHeartRate"
+                    Margin="5,7"/>
+                <TextBlock Grid.Row="3" Text="Calories Burned:" Margin="5,100,0,0"
+                    FontWeight="Bold"/>
+                <Label x:Name="lblCaloriesBurned"
+                    Margin="5,7"/>
+            </StackPanel>
+        </Grid>
+
+
+</StackPanel>
+
+
+</Window>

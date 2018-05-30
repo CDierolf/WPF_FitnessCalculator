@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_FitnessCalculator", "WPF_FitnessCalculator\WPF_FitnessCalculator.csproj", "{9D68496E-ABCB-43BF-B06B-F2DA30BC8C2C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9D68496E-ABCB-43BF-B06B-F2DA30BC8C2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D68496E-ABCB-43BF-B06B-F2DA30BC8C2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D68496E-ABCB-43BF-B06B-F2DA30BC8C2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D68496E-ABCB-43BF-B06B-F2DA30BC8C2C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D75491A6-FA91-4E3B-99B2-F5195F2180B2}
+	EndGlobalSection
+EndGlobal
